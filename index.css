@@ -66,26 +66,28 @@ nav a {
 /*---------------navigation--------------------*/
 
 /*--------------section 1-------------------*/
-main {
+
+.container {
 	max-width: 1000px;
-	margin-top: 120px;
+	margin: 120px auto 0 auto;
+	display: flex;
+	align-items: center;
 }
 
 #leftside {
 	display: flex;
-	text-align: left;
-	justify-content: left;
 	flex-direction: column;
-	max-width: 400px;
-	margin-left: 200px;
+	max-width: 40%;
 }
 
-#rightside {
-	display: flex;
-	text-align: left;
-	justify-content: right;
-	margin-right: 200px;
-	flex-wrap: wrap;
+#leftside a {
+	text-decoration: none;
+	color: white;
+}
+
+#rightside img {
+	width: 100%;
+	height: auto;
 }
 
 /*inserted a button class - double-check if it looks good once the project is done */
