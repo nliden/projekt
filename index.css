@@ -53,9 +53,11 @@ nav a {
 	padding-right: 10px;
 }
 
+/* --- need to learn how to remove border on the last "a"
 .rightnav:last-child {
 	border-right: none;
 }
+---*/
 
 .dropdown {
 	display: none;
@@ -82,6 +84,18 @@ main {
 	display: flex;
 	text-align: left;
 	justify-content: right;
+	margin-right: 200px;
+	flex-wrap: wrap;
+}
+
+/*inserted a button class - double-check if it looks good once the project is done */
+.button {
+	width: 120px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	text-align: center;
 }
 
 
