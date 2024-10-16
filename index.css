@@ -12,6 +12,7 @@ body {
 	width: 100px;
 }
 
+/*---------------navigation--------------------*/
 nav ul {
 	list-style: none;
 	padding: 10px;
@@ -51,3 +52,5 @@ nav a {
 .dropdown {
 	display: none;
 }
+
+/*---------------navigation--------------------*/
