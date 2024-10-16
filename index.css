@@ -77,7 +77,11 @@ nav a {
 #leftside {
 	display: flex;
 	flex-direction: column;
-	max-width: 40%;
+	width: 40%;
+}
+
+#leftside h1 {
+	margin: 0px;
 }
 
 #leftside a {
@@ -88,6 +92,8 @@ nav a {
 #rightside img {
 	width: 100%;
 	height: auto;
+	display: flex;
+	justify-content: center;
 }
 
 /*inserted a button class - double-check if it looks good once the project is done */
@@ -100,6 +106,28 @@ nav a {
 	text-align: center;
 }
 
-
 /*---------------section 1--------------------*/
+
+/*----companies ----- */
+
+.companies {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.row1 {
+	display: flex;
+	margin-top: 100px;
+	gap: 15px;
+	width: 20px;
+	height: 20px;
+}
+
+.row2 {
+	display: flex;
+	margin-top: 20px;
+	gap: 15px;
+	width: 20px;
+	height: 20px;
+}
 
