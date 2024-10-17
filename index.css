@@ -206,3 +206,28 @@ nav a {
 }
 
 /*------Quotes-------*/
+
+/*----section 2 ------*/
+
+#section2 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+
+#section2 h1 {
+	font-size: 36px;
+	font-weight: 550;
+	margin-bottom: -10px;
+}
+
+#centertext {
+	width: 700px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 320;
+	margin-bottom: 5px;
+}
