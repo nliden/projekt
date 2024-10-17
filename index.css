@@ -77,20 +77,27 @@ nav a {
 #leftside {
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 60%;
 }
 
 #leftside h1 {
-	margin: 0px;
+	margin-bottom: -11px;
+	font-size: 36px;
+}
+
+#leftside p {
+	font-size: 16.5px;
+	font-weight: lighter;
 }
 
 #leftside a {
 	text-decoration: none;
 	color: white;
+	font-size: 16px;
 }
 
 #rightside img {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	display: flex;
 	justify-content: center;
@@ -98,7 +105,7 @@ nav a {
 
 /*inserted a button class - double-check if it looks good once the project is done */
 .button {
-	width: 120px;
+	width: 130px;
 	padding: 10px;
 	background-color: black;
 	color: white;
@@ -112,22 +119,22 @@ nav a {
 
 .companies {
 	max-width: 1000px;
-	margin: 0 auto;
 }
 
 .row1 {
 	display: flex;
+	justify-content: center;
 	margin-top: 100px;
 	gap: 15px;
-	width: 20px;
-	height: 20px;
+	height: 25px;
 }
 
 .row2 {
 	display: flex;
-	margin-top: 20px;
+	justify-content: center;
+	margin-top: 25px;
 	gap: 15px;
-	width: 20px;
 	height: 20px;
 }
 
+/*----companies ----- */
