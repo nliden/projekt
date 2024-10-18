@@ -353,3 +353,32 @@ Fix font size, colours, space between emoji and title.--- */
 	align-self: self-end;
 	width: 450px;
 }
+
+
+/* ---- Section 4 Last Section before the footer -- */
+
+#columnoffour {
+	width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+	margin-top: 40px;
+}
+
+/* remove border from last child */
+
+#columnoffour div {
+	border-right: 2px solid #e5e5e5;
+}
+
+#columnoffour h1 {
+	font-size: 46px;
+}
+
+#columnoffour p {
+	margin-top: -20px;
+}
+
+
+/* ---- Section 4 Last Section before the footer -- */
+
