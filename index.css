@@ -236,7 +236,7 @@ nav a {
 	margin-bottom: 5px;
 }
 
-/* ---- Grey Box CONTINUE HERE---- */
+/* ---- Grey Box ---- */
 #greybox {
 	padding: 20px 0px;
 	color: #666666;
@@ -247,6 +247,7 @@ nav a {
 	align-items: center;
 	border-radius: 5px;
 	margin-top: 50px;
+	margin-bottom: 80px;
 }
 
 #line1 {
@@ -275,3 +276,40 @@ nav a {
 	height: 15px;
 	margin-right: 15px;
 }
+
+
+/* ---- Grey Box ---- */
+
+
+/* ---- Section 3 -- 3 columns 
+Fix font size, colours, space between emoji and title.--- */
+
+#header {
+	padding-top: 80px;
+	width: 1000px;
+	border-top: 2px solid #e5e5e5;;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#column {
+	width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+}
+
+#column a {
+	text-decoration: none;
+	color: grey;
+}
+
+/*---check if I can only do border right and left on the middle child instead --*/
+#column div {
+	border-right: 2px solid #e5e5e5;
+	padding: 20px;
+}
+
+/* ---- Section 3 ----- */
+
+/* ---- Last Section before the footer -- */
