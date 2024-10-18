@@ -382,3 +382,23 @@ Fix font size, colours, space between emoji and title.--- */
 
 /* ---- Section 4 Last Section before the footer -- */
 
+#finalsection {
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#finalsection h1 {
+	margin-bottom: -5px;
+}
+
+#finalsection a {
+	display: flex;
+	text-decoration: none;
+	align-self: center;
+	justify-content: center;
+}
+
+/* ---- Section 4 Last Section before the footer -- */
