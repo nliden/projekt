@@ -1,4 +1,7 @@
 /*fix all colours and shadows last, also double-check the fonts */
+*/ {
+	box-sizing: border-box;
+}
 
 @font-face {
 	font-family: Inter;
@@ -6,7 +9,6 @@
 }
 
 body {
-	box-sizing: border-box;
 	margin: 0;
 	font-family: Inter, sans-serif;
 	display: flex;
@@ -50,6 +52,16 @@ nav ul {
 nav a {
 	text-decoration: none;
 	color: #050505;
+	padding: 10px;
+	transition: background-color 0.3 ease;
+}
+
+/* not last-child either */
+
+nav li:not(first-child) a:hover {
+	background-color: #f4f4f4;
+	border-radius: 10px;
+	padding: 10px;
 }
 
 .leftnav {
@@ -60,11 +72,10 @@ nav a {
 
 .rightnav {
 	display: flex;
-	gap: 15px;
 }
 
 .rightnav li {
-	border-right: 1px solid #050505;
+	border-right: 1px solid #f4f4f4;
 	padding-right: 15px;
 }
 
