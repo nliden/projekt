@@ -21,7 +21,9 @@ body {
 }
 
 /*---------------navigation--------------------
-ADD HOVER, light grey besides the button there it should be lighter black, arrows, fix drop down menu */
+ADD HOVER, light grey besides the button there it should be lighter black, arrows, fix drop down menu
+Hide menu for mobile view, add hamburger menu. Burger menu should have light grey hover
+Mindre än / equal 600px width */
 
 nav {
 	max-width: 98%;
@@ -76,7 +78,8 @@ nav a {
 
 /*---------------navigation--------------------*/
 
-/*--------------section 1-------------------*/
+/*--------------section 1-------------------
+Phone view: picture above text*/
 
 .container {
 	max-width: 1000px;
@@ -137,7 +140,8 @@ nav a {
 
 /*---------------section 1--------------------*/
 
-/*----companies ----- */
+/*----companies 
+Phone: flow to new lines when minimising website view----- */
 
 .mainbox {
 	width: 1000px;
@@ -165,7 +169,8 @@ nav a {
 
 /*----companies ----- */
 
-/*----Second Text+Image of Section 1 ------*/
+/*----Second Text+Image of Section 1 
+Images and text centered in mobile view, with margin on the sides------*/
 
 .container2 {
 	max-width: 1000px;
@@ -205,7 +210,9 @@ nav a {
 
 /*----Second Text+Image of Section 1 ------*/
 
-/*------Quotes-------*/
+/*------Quotes
+
+Smaller for mobile phone -------*/
 .parenttext {
 	display: flex;
 	align-items: center;
@@ -331,7 +338,8 @@ nav a {
 /* ---- Grey Box ---- */
 
 
-/* ---- Section 3 -- 3 columns--- */
+/* ---- Section 3 -- 3 columns
+Phone: 1 column and 3 rows --- */
 
 #header {
 	padding-top: 60px;
@@ -391,7 +399,8 @@ nav a {
 
 /* ---- Section 3 ----- */
 
-/* ---- Section 4 Last Section before the footer -- */
+/* ---- Section 4 Last Section before the footer 
+1 column, text to the left and image centered-- */
 
 #header2 {
 	width: 1000px;
@@ -443,7 +452,8 @@ nav a {
 }
 
 
-/* ---- Section 4 Last Section before the footer -- */
+/* ---- Section 4 Last Section before the footer 
+Phone: 1 column instead of 4 (4 rows)-- */
 
 #columnoffour {
 	width: 1000px;
@@ -504,7 +514,8 @@ nav a {
 /* ---- Section 4 Last Section before the footer -- */
 
 
-/* -------------------footer--------------- */
+/* -------------------footer--------------- 
+Phone: section1 is on top, less space between social media links and text*/
 
 footer {
 	width: 99%;
@@ -548,6 +559,8 @@ footer {
 	font-weight: 400;
 }
 
+/* Phone: 2 columns */
+
 #columnlist {
 	display: flex;
 	flex-direction: row;
@@ -564,6 +577,8 @@ footer {
 	text-decoration: none;
 	color: #7f7f7f;
 }
+
+/* ADD HOVER text-decoration */
 
 #columnlist li {
 	list-style: none;
