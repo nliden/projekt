@@ -17,17 +17,21 @@ body {
 
 #logo {
 	width: 100px;
+	justify-content: flex-start;
 }
 
-/*---------------navigation--------------------*/
+/*---------------navigation--------------------
+ADD HOVER, light grey besides the button there it should be lighter black, arrows, fix drop down menu */
 
 nav {
-	max-width: 100vw;
+	max-width: 98%;
+	padding: 0;
 	align-items: center;
 	justify-content: space-between;
 	position: fixed;
 	display: flex;
 	flex-direction: row;
+	margin: 0 auto;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -38,7 +42,7 @@ nav {
 
 nav ul {
 	list-style: none;
-	padding: 10px;
+	padding-left: 0;
 }
 
 nav a {
@@ -48,14 +52,13 @@ nav a {
 
 .leftnav {
 	display: flex;
-	gap: 25px;
+	justify-content: flex-start;
+	gap: 20px;
 }
 
 .rightnav {
 	display: flex;
-	justify-content: center;
-	gap: 25px;
-	margin-right: 20px;
+	gap: 15px;
 }
 
 .rightnav li {
@@ -175,7 +178,7 @@ nav a {
 	text-align: justify;
 	align-self: flex-start;
 	margin-top: 50px;
-	width: 500px;
+	width: 40%;
 }
 
 .box1 h1 {
@@ -184,11 +187,11 @@ nav a {
 }
 
 .box1 p {
-	font-size: 18px;
-	font-weight: 320;
-	color: #666666;
-	line-height: 1.5;
-	margin-top: -12px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #7f7f7f;
+	line-height: 1.2;
+	margin-top: -10px;
 }
 
 .box2 img {
@@ -259,12 +262,14 @@ nav a {
 	font-size: 36px;
 	font-weight: 550;
 	margin-bottom: -10px;
+	color: #121212;
 }
 
 #centertext {
-	max-width: 700px;
+	max-width: 650px;
+	line-height: 1.2;
 	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 	margin-bottom: 20px;
 	color: #999999;
@@ -298,6 +303,10 @@ nav a {
 	width: 90%;
 }
 
+.feature:last-child {
+	border-bottom: none;
+}
+
 #line1 b {
 	font-weight: 400;
 }
@@ -311,8 +320,6 @@ nav a {
 	font-weight: 320;
 }
 
-/*----REMOVE BORDER FROM LAST CHILD ---*/
-
 .icon1 {
 	display: flex;
 	align-self: center;
@@ -324,8 +331,7 @@ nav a {
 /* ---- Grey Box ---- */
 
 
-/* ---- Section 3 -- 3 columns 
-Fix font size, colours, space between emoji and title.--- */
+/* ---- Section 3 -- 3 columns--- */
 
 #header {
 	padding-top: 60px;
@@ -357,6 +363,7 @@ Fix font size, colours, space between emoji and title.--- */
 #column h2 {
 	font-size: 24px;
 	font-weight: 450;
+	color: #121212;
 }
 
 #column p {
@@ -365,15 +372,21 @@ Fix font size, colours, space between emoji and title.--- */
 	color: #7f7f7f;
 }
 
+/*HOVER a BLUE!!! */
+
 #column a {
 	color: #353535;
 	font-size: 15px;
 }
 
-/*---check if I can only do border right and left on the middle child instead --*/
 #column div {
 	border-right: 2px solid #e5e5e5;
-	padding: 20px;
+	padding-right: 20px;
+	padding-left: 25px;
+}
+
+#column div:last-child {
+	border-right: none;
 }
 
 /* ---- Section 3 ----- */
@@ -390,6 +403,7 @@ Fix font size, colours, space between emoji and title.--- */
 	font-size: 36px;
 	font-weight: 550;
 	margin-bottom: 50px;
+	color: #121212;
 }
 
 #lastsection {
@@ -408,16 +422,18 @@ Fix font size, colours, space between emoji and title.--- */
 #text2 h2 {
 	font-size: 24px;
 	font-weight: 550;
+	color: #121212;
 }
 
 #text2 p {
 	font-size: 18px;
 	margin-top: -10px;
-	color: #666666;
+	color: #7f7f7f;
+	line-height: 1.5;
 }
 
 #text2 a {
-	color: #666666;
+	color: #7f7f7f;
 }
 
 #lastsection img {
@@ -437,10 +453,12 @@ Fix font size, colours, space between emoji and title.--- */
 	margin-top: 40px;
 }
 
-/* remove border from last child */
-
 #columnoffour div {
 	border-right: 2px solid #f4f4f4;
+}
+
+#columnoffour div:last-child {
+	border-right: none;
 }
 
 #columnoffour h1 {
@@ -489,7 +507,7 @@ Fix font size, colours, space between emoji and title.--- */
 /* -------------------footer--------------- */
 
 footer {
-	max-width: 1200px;
+	width: 99%;
 	border-top: 2px solid #f4f4f4;
 	padding-top: 50px;
 }
@@ -497,8 +515,8 @@ footer {
 #footerbox {
 	display: flex;
 	justify-content: space-between;
-	width: 1200px;
-	margin-bottom: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #firstsection {
@@ -506,6 +524,7 @@ footer {
 	flex-direction: column;
 	width: 140px;
 	margin-top: 30px;
+	margin-bottom: 60px;
 }
 
 #socialmedia {
@@ -532,8 +551,8 @@ footer {
 #columnlist {
 	display: flex;
 	flex-direction: row;
-	gap: 30px;
-	width: 900px;
+	gap: 90px;
+	width: 950px;
 }
 
 #columnlist b {
