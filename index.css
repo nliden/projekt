@@ -58,7 +58,8 @@ nav a {
 
 /* not last-child either */
 
-nav li:not(first-child) a:hover {
+.leftnav 
+li:not(#logo) a:hover {
 	background-color: #f4f4f4;
 	border-radius: 10px;
 	padding: 10px;
@@ -74,6 +75,13 @@ nav li:not(first-child) a:hover {
 	display: flex;
 }
 
+.rightnav 
+li:not(:last-child) a:hover {
+	background-color: #f4f4f4;
+	border-radius: 10px;
+	padding: 10px;
+}
+
 .rightnav li {
 	border-right: 1px solid #f4f4f4;
 	padding-right: 15px;
@@ -81,6 +89,12 @@ nav li:not(first-child) a:hover {
 
 .rightnav li:last-child {
 	border-right: none;
+}
+
+.rightnav li:last-child a:hover {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #353535;
 }
 
 .dropdown {
