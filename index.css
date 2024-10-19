@@ -22,6 +22,10 @@ body {
 	justify-content: flex-start;
 }
 
+.dropdowncontent {
+	display: none;
+}
+
 /*---------------navigation--------------------
 ADD HOVER, light grey besides the button there it should be lighter black, arrows, fix drop down menu
 Hide menu for mobile view, add hamburger menu. Burger menu should have light grey hover
@@ -97,6 +101,23 @@ li:not(:last-child) a:hover {
 	background-color: #353535;
 }
 
+.rightnav img {
+	width: 20px;
+	marign-right: 20px;
+	display: none;
+}
+
+@media (max-width: 600px) {
+	nav {
+		display: none;
+	}
+	.rightnav img {
+		display: inline-block;
+	}
+}
+
+/* work on this if time allows
+
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -115,6 +136,8 @@ li:not(:last-child) a:hover {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+
+*/
 
 /*---------------navigation--------------------*/
 
