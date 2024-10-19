@@ -98,7 +98,22 @@ li:not(:last-child) a:hover {
 }
 
 .dropdown {
+	position: relative;
+	display: inline-block;
+
+}
+.dropdowncontent {
 	display: none;
+	position: absolute;
+	z-index: 150;
+}
+
+.dropdowncontent a {
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 /*---------------navigation--------------------*/
