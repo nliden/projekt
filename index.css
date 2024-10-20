@@ -128,7 +128,7 @@ li:not(:last-child) a:hover {
 
 .rightnav img {
 	width: 20px;
-	marign-right: 20px;
+	margin-right: 20px;
 	display: none;
 }
 
@@ -139,7 +139,7 @@ li:not(:last-child) a:hover {
 		display: none;
 	}
 	.rightnav img {
-		display: inline-block;
+		display: block;
 	}
 }
 
@@ -166,7 +166,7 @@ li:not(:last-child) a:hover {
 
 */
 
-/*---------------navigation--------------------*/
+/*---------------END navigation--------------------*/
 
 /*--------------section 1-------------------*/
 
@@ -235,8 +235,7 @@ li:not(:last-child) a:hover {
 	.container {
 		display: flex;
 		flex-direction: column;
-		margin-left: 10px;
-		margin-right: 10px;
+		margin: 0px 25px;
 	}
 
 	#rightside img {
@@ -253,10 +252,9 @@ li:not(:last-child) a:hover {
 	}
 }
 
-/*---------------section 1--------------------*/
+/*---------------END section 1--------------------*/
 
-/*----companies 
-Phone: flow to new lines when minimising website view----- */
+/*----companies ---- */
 
 .mainbox {
 	max-width: 1000px;
@@ -265,8 +263,7 @@ Phone: flow to new lines when minimising website view----- */
 	flex-wrap: wrap;
 	justify-content: center;
 	border-bottom: 2px solid  #f4f4f4;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	padding: 30px 25px;
 }
 
 .companies {
@@ -284,10 +281,9 @@ Phone: flow to new lines when minimising website view----- */
 }
 
 
-/*----companies ----- */
+/*----END companies ----- */
 
-/*----Second Text+Image of Section 1 
-Images and text centered in mobile view, with margin on the sides------*/
+/*----Second Text+Image of Section 1 NEW CLASS ------*/
 
 .container2 {
 	max-width: 1000px;
@@ -320,22 +316,30 @@ Images and text centered in mobile view, with margin on the sides------*/
 	width: 100%;
 	display: flex;
 	align-items: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin: 30px 0px;
 	box-shadow: 0px 3px 65px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* mobile view */
-/*
 @media (max-width: 600px) {
-	
+	.container2 {
+		padding: 0px 25px;
+	}
+
+	.box1 {
+		text-align: center;
+		width: auto;
+	}
+
+	.box1 p {
+		font-size: 18px;
+		line-height: 1.5;
+	}
 }
 
-/*----Second Text+Image of Section 1 ------*/
+/*----END Second Text+Image of Section 1 ------*/
 
-/*------Quotes
-
-Smaller for mobile phone -------*/
+/*------Quotes -------*/
 .parenttext {
 	display: flex;
 	align-items: center;
@@ -373,12 +377,15 @@ Smaller for mobile phone -------*/
 }
 
 /* mobile view */
-/*
+
 @media (max-width: 600px) {
-	
+	.quote h1 {
+		font-size: 26px;
+		padding: 0px 20px;
+	}
 }
 
-/*------Quotes-------*/
+/*------End Quotes-------*/
 
 /*----section 2 ------*/
 
@@ -416,18 +423,37 @@ Smaller for mobile phone -------*/
 	color: white;
 }
 
+@media (max-width: 600px) {
+	#section2 {
+		padding: 80px 25px;
+		width: 85%;
+	}
+
+	#centertext {
+		line-height: 1.5;
+	}
+}
+
+/*----END section 2 ------*/
+
 /* ---- Grey Box ---- */
+
+#greyboxcontainer {
+	width: 1000px;
+	display: flex;
+    justify-content: center;
+}
+
 #greybox {
 	padding: 20px 0px;
 	color: #666666;
 	background-color: #f4f4f4;
 	display: flex;
 	flex-direction: column;
-	width: 700px;
+	width: 70%;
 	align-items: center;
 	border-radius: 5px;
-	margin-top: 50px;
-	margin-bottom: 80px;
+	margin: 50px 0px 80px 0px;
 }
 
 #line1 {
@@ -463,8 +489,14 @@ Smaller for mobile phone -------*/
 	margin-right: 15px;
 }
 
+@media (max-width: 600px) {
+	#greyboxcontainer {
+		width: 120%;
+		padding: 0px 25px;
+	}
+}
 
-/* ---- Grey Box ---- */
+/* ---- END Grey Box ---- */
 
 
 /* ---- Section 3 -- 3 columns
@@ -509,17 +541,13 @@ Phone: 1 column and 3 rows --- */
 	color: #7f7f7f;
 }
 
-/* mobile view */
-/*
-@media (max-width: 600px) {
-	
-}
-
-/*HOVER a BLUE!!! */
-
 #column a {
 	color: #353535;
 	font-size: 15px;
+}
+
+#column a:hover {
+	color: #087fe7;
 }
 
 #column div {
@@ -530,6 +558,14 @@ Phone: 1 column and 3 rows --- */
 
 #column div:last-child {
 	border-right: none;
+}
+
+/* mobile view  FIX THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media (max-width: 600px) {
+	#column {
+	display: flex;
+	flex-direction: column;
+	}
 }
 
 /* ---- Section 3 ----- */
@@ -586,14 +622,13 @@ Phone: 1 column and 3 rows --- */
 	width: 450px;
 }
 
-/* mobile view */
+/* mobile view FIIIIIX!!!!! */
 /*
 @media (max-width: 600px) {
 	
 }
 
-/* ---- Section 4 Last Section before the footer 
-Phone: 1 column instead of 4 (4 rows)-- */
+/* ---- Section 4 Last Section before the footer ------ */
 
 #columnoffour {
 	width: 1000px;
@@ -622,9 +657,14 @@ Phone: 1 column instead of 4 (4 rows)-- */
 }
 
 /* mobile view */
-/*
 @media (max-width: 600px) {
-	
+	#columnoffour {
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	#columnoffour h1 {
+	font-size: 53px;
+	}
 }
 
 /* ---- Section 4 Last Section before the footer -- */
@@ -634,8 +674,7 @@ Phone: 1 column instead of 4 (4 rows)-- */
 	flex-direction: column;
 	width: 1000px;
 	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 60px;
+	margin: 40px 0px 60px 0px;
 }
 
 #finalsection h1 {
@@ -656,7 +695,7 @@ Phone: 1 column instead of 4 (4 rows)-- */
 	justify-content: center;
 }
 
-/* ---- Section 4 Last Section before the footer -- */
+/* ---- END Section 4 Last Section before the footer -- */
 
 
 /* -------------------footer--------------- 
@@ -679,8 +718,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	width: 140px;
-	margin-top: 30px;
-	margin-bottom: 60px;
+	margin: 30px 0px;
 }
 
 #socialmedia {
@@ -704,12 +742,6 @@ footer {
 	font-weight: 400;
 }
 
-/* mobile view */
-/*
-@media (max-width: 600px) {
-	
-}
-
 /* Phone: 2 columns */
 
 #columnlist {
@@ -730,10 +762,30 @@ footer {
 }
 
 /* mobile view */
-/*
 @media (max-width: 600px) {
-	
+	#firstsection {
+	margin: 5px 0px;
+	}
+
+	#lasttext {
+	margin: 5px 0px;
+	}
+
+	#columnlist {
+	display: grid;
+	grid-template-columns: repeat(2, 170px);
+	grid-template-rows: repeat(2, 170px);
+	width: 100%;
+	align-items: start;
+	}
+
+	#footerbox {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 25px;
+	}
 }
+
 
 /* ADD HOVER text-decoration */
 
