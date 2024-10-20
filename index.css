@@ -94,11 +94,13 @@ li:not(:last-child) a:hover {
 }
 
 
-/* mobile view */
+/* 600px mobile view 1080px tablet
+logo, button and burger menu are visible */
 
 @media (max-width: 600px) {
 	menu {
 		width: 100%;
+		padding: 0;
 	}
 
 	nav { 
@@ -410,6 +412,8 @@ li:not(:last-child) a:hover {
 	color: white;
 }
 
+/* mobile view */
+
 @media (max-width: 600px) {
 	#section2 {
 		padding: 80px 25px;
@@ -475,6 +479,8 @@ li:not(:last-child) a:hover {
 	margin-right: 15px;
 }
 
+/* mobile view */
+
 @media (max-width: 600px) {
 	#greyboxcontainer {
 		width: 120%;
@@ -486,7 +492,7 @@ li:not(:last-child) a:hover {
 
 
 /* ---- Section 3 -- 3 columns
-Phone: 1 column and 3 rows --- */
+Tablets: 2 columns and 2 rows  borders gone--- */
 
 #header {
 	padding: 60px 0px 30px 0px;
@@ -553,8 +559,7 @@ Phone: 1 column and 3 rows --- */
 
 /* ---- Section 3 ----- */
 
-/* ---- Section 4 Last Section before the footer 
-1 column, text to the left and image centered-- */
+/* ---- Section 4 Last Section before the footer - */
 
 #header2 {
 	max-width: 1000px;
@@ -622,7 +627,8 @@ Phone: 1 column and 3 rows --- */
 	}
 }
 
-/* ---- Section 4 Last Section before the footer ------ */
+/* ---- Section 4 Last Section before the footer 
+Tablets: 2 columns 2 rows borders gone------ */
 
 #columnoffour {
 	width: 1000px;
@@ -722,7 +728,7 @@ footer {
 	gap: 10px;
 }
 
-#socialmedia a {
+#socialmedia img {
 	width: 20px;
 }
 
