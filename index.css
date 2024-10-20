@@ -94,8 +94,7 @@ li:not(:last-child) a:hover {
 }
 
 
-/* 600px mobile view (1080px tablet
-logo, button and burger menu are visible) */
+/* 600px mobile view (1080px tablet: logo, button and burger menu are visible) */
 
 @media (max-width: 600px) {
 	menu {
