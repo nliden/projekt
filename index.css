@@ -94,8 +94,8 @@ li:not(:last-child) a:hover {
 }
 
 
-/* 600px mobile view 1080px tablet
-logo, button and burger menu are visible */
+/* 600px mobile view (1080px tablet
+logo, button and burger menu are visible) */
 
 @media (max-width: 600px) {
 	menu {
@@ -699,7 +699,7 @@ Tablets: 2 columns 2 rows borders gone------ */
 
 
 /* -------------------footer--------------- 
-Phone: section1 is on top, less space between social media links and text*/
+Tablet the same as phone: section1 is on top, less space between social media links and text*/
 
 footer {
 	width: 99%;
