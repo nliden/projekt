@@ -16,12 +16,6 @@ body {
 	align-items: center;
 }
 
-/* Work on the drop down menu in my own time */
-
-.dropdowncontent {
-	display: none;
-}
-
 /*---------------navigation-------------------- */
 
 #logo {
@@ -103,13 +97,18 @@ li:not(:last-child) a:hover {
 /* mobile view */
 
 @media (max-width: 600px) {
+	menu {
+		width: 100%;
+	}
+
 	nav { 
 		border: none;
-		padding: 10px 25px;
+		padding: 0px 25px;
+		position: relative;
+		width: auto;
 	}
 
 	nav ul {
-		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
@@ -125,7 +124,7 @@ li:not(:last-child) a:hover {
 
 
 	ul.rightnav {
-		padding: 10px 0px;
+		padding: 20px 25px;
 	}
 
 	.rightnav li {
