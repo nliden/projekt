@@ -85,7 +85,6 @@ nav a {
 	text-decoration: none;
 	color: #050505;
 	padding: 10px 15px;
-	transition: background-color 0.3 ease;
 }
 
 .leftnav 
@@ -102,6 +101,7 @@ li:not(#logo) a:hover {
 
 .rightnav {
 	display: flex;
+	padding: 10px 15px;
 }
 
 .rightnav 
@@ -112,22 +112,15 @@ li:not(:last-child) a:hover {
 }
 
 .rightnav li {
-	border-right: 1px solid #f4f4f4;
+	border-right: 2px solid #f4f4f4;
 }
 
 .rightnav li:last-child {
 	border-right: none;
 }
 
-.rightnav li:last-child a:hover {
-	padding: 5px;
-	border-radius: 5px;
-	background-color: #353535;
-}
 
 #burger {
-	width: 20px;
-	margin-right: 20px;
 	display: none;
 }
 
@@ -135,16 +128,24 @@ li:not(:last-child) a:hover {
 /* CONTINUE HERE, OPTIMISE SITE FOR MOBIEL OPTIMISATION */
 
 @media (max-width: 600px) {
-	nav {
+	nav { 
+		border: none;
+	}
+
+	nav li :not(#logo){
 		display: none;
 	}
 
-	#logo {
-		display: inline-block;
+	#burger {
+		display: flex;
+		width: 20px;
+		margin-right: 20px;
+		padding: 5px;
+		border-radius: 5px;
 	}
 
-	#burger {
-		display: inline-block;
+	#burger:hover {
+		background-color: #f4f4f4;
 	}
 }
 
@@ -233,6 +234,11 @@ li:not(:last-child) a:hover {
 	text-align: center;
 	margin: 0px;
 }
+
+.button:hover {
+	background-color: #353535;
+}
+
 
 /* Mobile view */
 
