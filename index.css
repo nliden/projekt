@@ -168,14 +168,15 @@ li:not(:last-child) a:hover {
 
 /*---------------navigation--------------------*/
 
-/*--------------section 1-------------------
-Phone view: picture above text*/
+/*--------------section 1-------------------*/
 
 .container {
 	max-width: 1000px;
 	margin: 120px auto 0 auto;
 	display: flex;
 	align-items: center;
+	border-bottom: 2px solid  #f4f4f4;
+	padding-bottom: 90px;
 }
 
 #leftside {
@@ -216,7 +217,7 @@ Phone view: picture above text*/
 	height: auto;
 }
 
-/*inserted a button class - double-check if it looks good once the project is done */
+/*--- Button class --- */
 .button {
 	width: 120px;
 	padding: 5px;
@@ -228,34 +229,60 @@ Phone view: picture above text*/
 	margin: 0px;
 }
 
+/* Mobile view */
+
+@media (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#rightside img {
+		order: 2;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	#leftside {
+		order: 1;
+		text-align: center;
+		display: flex;
+  		align-items: center;
+	}
+}
+
 /*---------------section 1--------------------*/
 
 /*----companies 
 Phone: flow to new lines when minimising website view----- */
 
 .mainbox {
-	width: 1000px;
-}
-
-.row1 {
+	max-width: 1000px;
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 100px;
-	gap: 15px;
-	height: 25px;
-	padding-top: 40px;
-	border-top: 2px solid  #f4f4f4;
-}
-
-.row2 {
-	display: flex;
-	justify-content: center;
-	margin-top: 25px;
-	gap: 15px;
-	height: 20px;
-	padding-bottom: 40px;
 	border-bottom: 2px solid  #f4f4f4;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
+
+.companies {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	gap: 15px;
+}
+
+.companies img {
+	height: 25px;
+	width: auto;
+	margin: 5px;
+}
+
 
 /*----companies ----- */
 
@@ -298,6 +325,12 @@ Images and text centered in mobile view, with margin on the sides------*/
 	box-shadow: 0px 3px 65px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
+}
+
 /*----Second Text+Image of Section 1 ------*/
 
 /*------Quotes
@@ -337,6 +370,12 @@ Smaller for mobile phone -------*/
 	font-size: 15px;
 	font-weight: 320;
 	color: #999999;
+}
+
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
 }
 
 /*------Quotes-------*/
@@ -470,6 +509,12 @@ Phone: 1 column and 3 rows --- */
 	color: #7f7f7f;
 }
 
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
+}
+
 /*HOVER a BLUE!!! */
 
 #column a {
@@ -541,6 +586,11 @@ Phone: 1 column and 3 rows --- */
 	width: 450px;
 }
 
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
+}
 
 /* ---- Section 4 Last Section before the footer 
 Phone: 1 column instead of 4 (4 rows)-- */
@@ -571,6 +621,11 @@ Phone: 1 column instead of 4 (4 rows)-- */
 	color: #999999;
 }
 
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
+}
 
 /* ---- Section 4 Last Section before the footer -- */
 
@@ -649,6 +704,12 @@ footer {
 	font-weight: 400;
 }
 
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
+}
+
 /* Phone: 2 columns */
 
 #columnlist {
@@ -666,6 +727,12 @@ footer {
 #columnlist a {
 	text-decoration: none;
 	color: #7f7f7f;
+}
+
+/* mobile view */
+/*
+@media (max-width: 600px) {
+	
 }
 
 /* ADD HOVER text-decoration */
