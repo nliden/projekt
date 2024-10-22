@@ -1,4 +1,4 @@
-*/ {
+* {
 	box-sizing: border-box;
 }
 
@@ -39,6 +39,7 @@ nav {
 	z-index: 100;
 	background-color: white;
 	border-bottom: 2px solid #e5e5e5;
+	padding: 20px 0px;
 }
 
 nav ul {
@@ -97,7 +98,7 @@ li:not(:last-child) a:hover {
 /* 600px mobile view (1080px tablet: logo, button and burger menu are visible) */
 
 @media (max-width: 600px) {
-	menu {
+	#menu {
 		width: 100%;
 		padding: 0;
 	}
@@ -161,7 +162,7 @@ li:not(:last-child) a:hover {
 	display: flex;
 	align-items: center;
 	border-bottom: 2px solid  #f4f4f4;
-	padding-bottom: 90px;
+	padding: 40px 0px 90px 0px;
 }
 
 #leftside {
@@ -204,7 +205,7 @@ li:not(:last-child) a:hover {
 
 /*--- Button class --- */
 .button {
-	max-width: 120px;
+	max-width: 150px;
 	padding: 10px;
 	background-color: #050505;
 	box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.1);
@@ -252,7 +253,7 @@ li:not(:last-child) a:hover {
 	flex-wrap: wrap;
 	justify-content: center;
 	border-bottom: 2px solid  #f4f4f4;
-	padding: 30px 25px;
+	padding: 30px 0px;
 }
 
 .companies {
@@ -267,6 +268,12 @@ li:not(:last-child) a:hover {
 	height: 25px;
 	width: auto;
 	margin: 5px;
+}
+
+@media (max-width: 600px) {
+	.companies {
+		padding: 0px 25px;
+	}
 }
 
 
